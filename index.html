@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CACERIA DE SANGRE</title>
+	<style>
+		/* Estilo para centrar el título */
+		h1 {
+			margin-top: 20px;
+			text-align: center;
+		}
+	  
+		/* Estilo para el encabezado */
+		header {
+			background-color: rgba(0, 0, 0, 0);
+			color: #722f37;
+			font-family: Beautiful Vampires; /* Establecer la fuente */
+			font-size: 60px; /* Aumentar el tamaño de la fuente */
+			padding: 10px;
+			text-align: center;
+			-webkit-text-stroke: 1px black; /* Agregar borde negro */
+			text-stroke: 1px black; /* Agregar borde negro */
+		}
+	  
+		/* Estilo para el menú */
+		nav {
+			background-color: transparent;
+			color: blue;
+			font-family: Beautiful Vampires; /* Establecer la fuente */
+			font-size: 50px; /* Aumentar el tamaño de la fuente */
+			padding: 10px;
+			text-align: center;				
+		}
+		nav li {
+		list-style: none;
+		}	  
+		
+		/* Estilo para el texto que aparece al pulsar la opción 1 del menú */
+		#texto-opcion1 {
+			background-color: white;
+			color: black;
+			font-family: Arial, sans-serif; /* Establecer la fuente */
+			font-size: 20px; /* Aumentar el tamaño de la fuente */
+			padding: 10px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+    </style>
+</head>
+<body style="background-image: url('fondo.jpg'); background-size: cover; background-repeat: no-repeat;">
+	<header>
+		<h1>CACERIA DE SANGRE</h1>
+	</header>
+	<main>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="opcion1.html">Sinopsis de la historia</a></li>
+					<li><a href="archivos/trailer.mp4" target="_blank">Trailer</a></li>
+					<li><a href="#">Personajes</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+	</main>
+	<footer style="text-align:center; font-family: Beautiful Vampires; font-size: 3em; color: white;">
+		<p>By Spider GM</p>
+	</footer>
+	<script>
+		function mostrarTextoOpcion1() {
+			var texto = "Este es el texto de la opción 1.";
+			document.getElementById("texto-opcion1").innerHTML = texto;
+		}
+	</script>
+</body>
+</html>
